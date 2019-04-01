@@ -1,12 +1,28 @@
 /* COMMON */
-body {}
-.page {}
-
+body {
+    margin: 0;
+	padding: 0;
+    border: 0;
+    box-sizing: border-box; 
+    font-family:  'Roboto Slab', sans-serif; 
+}
+.page {
+    background:linear-gradient(-180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.35) 50%), url('../images/anonymous-server-background.jpg'); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
 
 
 
 /* HEADER */
-.page__header {}
+.page__header {
+    display: none;  
+}
 .nav-trigger {}
 
 
@@ -14,7 +30,9 @@ body {}
 
 /* MENU */
 .nav {}
-.nav__items {}
+.nav__items {
+    
+}
 .nav__item {}
 .nav__link {}
 .nav-close {}
@@ -23,14 +41,40 @@ body {}
 
 
 /* MAIN */
-.page__main {}
-.page__wrapper {}
-.page__main-title {}
+.page__main {
+    min-height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page__wrapper {
+    display: block;
+    width: 30%;
+    margin-top: 30%;
+    padding-right: 40%;
+}
+.page__main-title {
+
+    color: whitesmoke;
+    text-transform: uppercase;
+}
 
 
 
 
 /* FOOTER */
-.page__footer {}
-.page__footer {}
-.page__footer-copy {}
+.page__footer {
+    height: 10vh;
+    min-width: 100%;
+    position: fixed;
+    color: greenyellow;
+}
+.page__footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page__footer-copy {
+    font-family: Arial;
+}
